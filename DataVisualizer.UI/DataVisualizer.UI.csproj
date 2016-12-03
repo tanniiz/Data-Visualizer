@@ -85,6 +85,9 @@
     </Compile>
     <Compile Include="ApplicationShell\ApplicationShellViewModel.cs" />
     <Compile Include="ApplicationShell\IApplicationShell.cs" />
+    <Compile Include="Controls\FileBrowserButton.xaml.cs">
+      <DependentUpon>FileBrowserButton.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -115,6 +118,10 @@
   <ItemGroup />
   <ItemGroup>
     <Page Include="ApplicationShell\ApplicationShellView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\FileBrowserButton.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

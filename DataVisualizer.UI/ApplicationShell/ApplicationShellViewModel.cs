@@ -7,8 +7,15 @@ using Caliburn.Micro;
 
 namespace DataVisualizer.UI.ApplicationShell
 {
-    public class ApplicationShellViewModel : PropertyChangedBase, 
+    public class ApplicationShellViewModel : PropertyChangedBase,
         IApplicationShell
     {
+        public string filter
+        {
+            get
+            {
+                return "CSV Files (*.csv)|*.csv";
+            }
+        }
     }
 }

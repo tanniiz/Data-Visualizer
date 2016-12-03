@@ -8,5 +8,9 @@ namespace DataVisualizer.UI.ApplicationShell
 {
     interface IApplicationShell
     {
+        string filter
+        {
+            get;
+        }
     }
 }

@@ -5,11 +5,8 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:DataVisualizer.UI.ApplicationShell"
              xmlns:screen="clr-namespace:DataVisualizer.UI.Screens"
-             mc:Ignorable="d" 
-             Width="640"
-             Height="480">
+             mc:Ignorable="d">
     <Grid>
         <ContentControl x:Name="MainScreen" />
-        <!--<screen:MainScreenView Grid.Column="0" Grid.Row="1"/>-->
     </Grid>
 </UserControl>

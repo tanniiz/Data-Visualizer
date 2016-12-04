@@ -33,7 +33,14 @@ namespace DataVisualizer.UI
         {
             base.OnStartup(sender, e);
 
-            DisplayRootViewFor<IApplicationShell>();
+            var settings = new Dictionary<string, object>
+            {
+               { "SizeToContent", SizeToContent.Manual },
+               { "Height" , 600  },
+               { "Width"  , 1024 },
+            };
+            
+            DisplayRootViewFor<IApplicationShell>(settings);
         }
 
         protected override object GetInstance(Type service, string key)

@@ -40,6 +40,9 @@ namespace DataVisualizer.UI.Controls
         }
         #endregion
 
+        public delegate void PageActionMenuEventHandler(object sender, FilePathChangedEventArgs e);
+        public event PageActionMenuEventHandler FilePathChanged;
+
         public FileBrowserButton()
         {
             InitializeComponent();
@@ -65,6 +68,10 @@ namespace DataVisualizer.UI.Controls
                 // Open document 
                 string filename = dlg.FileName;
                 FileLocationTextBox.Text = filename;
+
+                if (FilePathChanged != null) {
+                    FilePathChanged(this, new FilePathChangedEventArgs { FilePath = filename });
+                }
             }
         }
     }

@@ -4,20 +4,12 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:DataVisualizer.UI.ApplicationShell"
-             xmlns:control="clr-namespace:DataVisualizer.UI.Controls"
+             xmlns:screen="clr-namespace:DataVisualizer.UI.Screens"
              mc:Ignorable="d" 
              Width="640"
              Height="480">
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto" />
-        </Grid.ColumnDefinitions>
-        <control:FileBrowserButton FileFilter="{Binding filter}" DefaultFileFilter="{Binding filter}"></control:FileBrowserButton>          
+        <ContentControl x:Name="MainScreen" />
+        <!--<screen:MainScreenView Grid.Column="0" Grid.Row="1"/>-->
     </Grid>
 </UserControl>

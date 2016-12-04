@@ -77,6 +77,9 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Controls\FileBrowserButton\FilePathChangedEventArgs.cs" />
+    <Compile Include="Screens\MainScreen\IMainScreen.cs" />
+    <Compile Include="Screens\MainScreen\MainScreenViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppBootstrapper.cs" />
@@ -85,9 +88,10 @@
     </Compile>
     <Compile Include="ApplicationShell\ApplicationShellViewModel.cs" />
     <Compile Include="ApplicationShell\IApplicationShell.cs" />
-    <Compile Include="Controls\FileBrowserButton.xaml.cs">
+    <Compile Include="Controls\FileBrowserButton\FileBrowserButton.xaml.cs">
       <DependentUpon>FileBrowserButton.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Framework\ScreenControl.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -121,7 +125,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Controls\FileBrowserButton.xaml">
+    <Page Include="Controls\FileBrowserButton\FileBrowserButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Screens\MainScreen\MainScreenView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

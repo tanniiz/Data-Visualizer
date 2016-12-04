@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using Caliburn.Micro;
 using DataVisualizer.UI.ApplicationShell;
+using DataVisualizer.UI.Screens;
 
 namespace DataVisualizer.UI
 {
@@ -25,6 +26,7 @@ namespace DataVisualizer.UI
             container.Singleton<IWindowManager, WindowManager>();
             container.Singleton<IEventAggregator, EventAggregator>();
             container.Singleton<IApplicationShell, ApplicationShellViewModel>();
+            container.PerRequest<IMainScreen, MainScreenViewModel>();
         }
 
         protected override void OnStartup(object sender, StartupEventArgs e)

@@ -7,6 +7,6 @@
              xmlns:screen="clr-namespace:DataVisualizer.UI.Screens"
              mc:Ignorable="d">
     <Grid>
-        <ContentControl x:Name="MainScreen" />
+        <ContentControl x:Name="MainScreen"/>
     </Grid>
 </UserControl>

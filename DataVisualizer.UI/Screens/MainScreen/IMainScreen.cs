@@ -14,6 +14,18 @@ namespace DataVisualizer.UI.Screens
             get;
         }
 
+        List<string> DataColumns
+        {
+            get;
+            set;
+        }
+
+        List<List<string>> DataRows
+        {
+            get;
+            set;
+        }
+
         void FilePathChanged(FilePathChangedEventArgs args);
 
         void ProceedData();

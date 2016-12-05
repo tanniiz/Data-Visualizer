@@ -15,7 +15,7 @@
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
-        <StackPanel Grid.Row="0">
+        <DockPanel Grid.Row="0">
             <GroupBox Margin="10" Padding="10 15" Header="Configuration">
                 <Grid>
                     <Grid.RowDefinitions>
@@ -36,6 +36,10 @@
                     </StackPanel>
                 </Grid>
             </GroupBox>
-        </StackPanel>
+        </DockPanel>
+
+        <DockPanel Grid.Row="1" VerticalAlignment="Stretch" Margin="0,0,0,10">
+            <control:DataGrid DataColumns="{Binding DataColumns}" DataRows="{Binding DataRows}" Padding="10 0"/>
+        </DockPanel>
     </Grid>
 </UserControl>

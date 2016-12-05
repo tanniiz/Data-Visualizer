@@ -77,9 +77,13 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Controls\DataGrid\DataGrid.xaml.cs">
+      <DependentUpon>DataGrid.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controls\FileBrowserButton\FilePathChangedEventArgs.cs" />
     <Compile Include="Screens\MainScreen\IMainScreen.cs" />
     <Compile Include="Screens\MainScreen\MainScreenViewModel.cs" />
+    <Compile Include="Utils\CSVUtils.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppBootstrapper.cs" />
@@ -122,6 +126,10 @@
   <ItemGroup />
   <ItemGroup>
     <Page Include="ApplicationShell\ApplicationShellView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\DataGrid\DataGrid.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
